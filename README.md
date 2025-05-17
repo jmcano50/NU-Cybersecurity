@@ -39,4 +39,4 @@ Tools Used: curl – For testing SSRF and extracting metadata. AWS CLI – To us
 References:
 https://attack.mitre.org/techniques/T1557/003/
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html
-https://infosecwriteups.com/ssrf-to-aws-credentials-extraction-a-practical-guide-4c1001f8e5d4
+https://blog.assetnote.io/2021/01/13/exploiting-ssrf-in-aws/
