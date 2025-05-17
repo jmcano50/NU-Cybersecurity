@@ -8,7 +8,8 @@ This walkthrough demonstrates how an attacker could exploit an SSRF vulnerabilit
 
 This lab was conducted in a controlled environment using a simulated SSRF vulnerability hosted in a cloud-based web application. Platform: PwnedLabs / BTLO (Blue Team Labs Online). Target: Web server hosted on AWS EC2 with a curl-based SSRF parameter. Vulnerability: url= parameter that fails to validate input properly. Attacker Access: External user can inject requests via browser or curl. Detection Scope: AWS CloudTrail, web server logs, metadata access attempt. The goal was to simulate an attacker exploiting this SSRF to retrieve IAM credentials from the metadata service, then abuse those credentials using the AWS CLI.
 
-curl 'https://target-site.com/api/fetch?url=http://169.254.169.254'
+# SSRF injection example – this is a placeholder and will only work in the lab environment
+curl 'http://vulnerable-app.local/api/fetch?url=http://169.254.169.254'
 
 curl http://169.254.169.254/latest/meta-data/
 curl http://169.254.169.254/latest/meta-data/iam/security-credentials/
